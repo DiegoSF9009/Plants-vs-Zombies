@@ -7,6 +7,8 @@ public class GunData : ScriptableObject
 
     public float fireRate = 0.5f;
 
+    public float range = 15f;
+
     public string shootAnimationName = "Shoot";
 
     public string idleAnimationName = "Idle";
