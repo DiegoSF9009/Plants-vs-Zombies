@@ -9,6 +9,8 @@ TagManager:
   - Zombie
   - Coin2
   - Enemy
+  - Floor
+  - Step
   layers:
   - Default
   - TransparentFX
@@ -18,7 +20,7 @@ TagManager:
   - UI
   - PlayerTeam
   - Enemies
-  - 
+  - Floor
   - 
   - 
   - 

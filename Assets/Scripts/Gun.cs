@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Gun : MonoBehaviour
 {
-   
+
     [SerializeField]
 
     private Health health;
@@ -22,10 +22,22 @@ public class Gun : MonoBehaviour
     [SerializeField]
 
     private float raycastOffset = 2f;
+    [SerializeField]
+
+    private Animator animator;
+
+    private bool _isActive = false;
+
     private bool isShooting = false;
 
     private Health enemyHealth;
     private Coroutine shootCoroutine;
+
+    public bool isActive
+    {
+        set { _isActive = value; }
+    }
+
     private void OnEnable()
     {
         enemyHealth = null;
@@ -34,7 +46,7 @@ public class Gun : MonoBehaviour
         //SoundManager.instance.Play(gunData.appearSoundName);
     }
 
-private void Update()
+    private void Update()
     {
         if (!isShooting && health.CurrentHealth > 0)
         {
@@ -64,17 +76,25 @@ private void Update()
         isShooting = false;
         enemyHealth = null;
     }
-     
-     public void Die()
+
+    public void Die()
     {
         if (shootCoroutine != null)
         {
             StopCoroutine(shootCoroutine);
         }
-
+        animator.Play(gunData.dieAnimationName, 0, 0f);
         isShooting = false;
         enemyHealth = null;
         SoundManager.instance.Play(gunData.dieShootName);
+        StartCoroutine(DieRoutine());
+    }
+
+
+    private IEnumerator DieRoutine()
+    {
+        yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length);
         gameObject.SetActive(false);
     }
 }
+
