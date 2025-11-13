@@ -1,0 +1,227 @@
+fileFormatVersion: 2
+guid: d14841f1720752d41b80940ff70ce019
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CHAR_DEFAULT_EYES_D
+    second: {fileID: 2800000, guid: cb857c75cb0d6d4408b44a9b5bc9f06c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CHAR_DEFAULT_EYES_N
+    second: {fileID: 2800000, guid: c7f06c5461f66ae4cb53ee9fdd631ca9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CHAR_DEFAULT_EYES_PSA
+    second: {fileID: 2800000, guid: ada16908286436b47984743c0fded4d1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CHAR_ELECTRIC_POLE_N
+    second: {fileID: 2800000, guid: 69195ea97a98a1e40ab940a5693a8888, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CHAR_ELECTRIC_POLE_PSA
+    second: {fileID: 2800000, guid: 207948da3e6f2e5469236293b5624a72, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CHAR_GARGANTUAN_BOTTOM_N
+    second: {fileID: 2800000, guid: e58d0170f330e1f40ac888099caed1cb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CHAR_GARGANTUAN_BOTTOM_PSA
+    second: {fileID: 2800000, guid: 220f483f9dbe204498de4c41d930c4fd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CHAR_GIGA_GARGANTUAN_BOTTOM_D
+    second: {fileID: 2800000, guid: 41e9a3ff26f3246479f33ad450064d84, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CHAR_GIGA_GARGANTUAN_GLASSES_D
+    second: {fileID: 2800000, guid: 2fe4f1a4c8d33ef4c8443ec1b8e41e2f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CHAR_GIGA_GARGANTUAN_GLASSES_N
+    second: {fileID: 2800000, guid: 54c4e9362be40db4e9b67da17bb74735, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CHAR_GIGA_GARGANTUAN_GLASSES_PSA
+    second: {fileID: 2800000, guid: d421287fb6252b94895b6688d96f4814, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CHAR_GIGA_GARGANTUAN_SKIN_D
+    second: {fileID: 2800000, guid: 101e17b6051d6d34ebf6fd2f40abbad1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CHAR_GIGA_GARGANTUAN_SKIN_N
+    second: {fileID: 2800000, guid: e3365b92e8bbc21488267c6afe10929a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CHAR_GIGA_GARGANTUAN_SKIN_PSA
+    second: {fileID: 2800000, guid: 74c977adebc85d540b0b5f2b7de6917c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CHAR_GIGA_GARGANTUAN_TOP_D
+    second: {fileID: 2800000, guid: b302327eef70dcb4da1e7bae3af2e192, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CHAR_GIGA_GARGANTUAN_TOP_N
+    second: {fileID: 2800000, guid: 166a38ff71390c34abb57dd8b8e82753, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: CHAR_GIGA_GARGANTUAN_TOP_PSA
+    second: {fileID: 2800000, guid: 66badc5ea1b754a459c9eaf3eb5a7c2f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: GIGA_IMP_CLOTH_D
+    second: {fileID: 2800000, guid: 2fe8596c724138946b24bafa671050a5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: GIGA_IMP_CLOTH_PSA
+    second: {fileID: 2800000, guid: 7cb5a2f07df6a24498137cbc2deb0eb1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: GIGA_IMP_SKIN_D
+    second: {fileID: 2800000, guid: eb41d49c918447b4c8900e4973965d96, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: GIGA_IMP_SKIN_PSA
+    second: {fileID: 2800000, guid: d221b1a015750824782ea8c3b5ea4d64, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: IMP_CLOTH_N
+    second: {fileID: 2800000, guid: 8136015cca257af4faaf25c26e24211b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: IMP_skin_N
+    second: {fileID: 2800000, guid: de34ccb03ec57694e8e7451a4b2f63eb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: char_electric_pole_d
+    second: {fileID: 2800000, guid: 132de672de0ada045973398938e04d70, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

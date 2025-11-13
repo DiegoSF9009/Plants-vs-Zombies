@@ -30,7 +30,7 @@ public class Enemy : MonoBehaviour
     {
         health.InitializeHealth(enemyData.health);
         StartLooking();
-        SoundManager.instance.Play("zombiemine");
+        //SoundManager.instance.Play("zombiemine");
     }
 
     private void StartLooking()

@@ -1,12 +1,9 @@
 using UnityEngine;
 using System.Collections;
 
-public class Gun : MonoBehaviour
+public class Gun : BasePlant
 {
-
-    [SerializeField]
-
-    private Health health;
+    [Header("Gun Components")]
     [SerializeField]
 
     private GunData gunData;
@@ -22,27 +19,19 @@ public class Gun : MonoBehaviour
     [SerializeField]
 
     private float raycastOffset = 2f;
-    [SerializeField]
-
-    private Animator animator;
-
-    private bool _isActive = false;
 
     private bool isShooting = false;
 
     private Health enemyHealth;
     private Coroutine shootCoroutine;
 
-    public bool isActive
-    {
-        set { _isActive = value; }
-    }
-
-    private void OnEnable()
+       private void OnEnable()
     {
         enemyHealth = null;
         isShooting = false;
+        isActive = false;
         health.InitializeHealth(gunData.maxHealth);
+        animator.Play(gunData.idleAnimationName, 0, 0f);
         //SoundManager.instance.Play(gunData.appearSoundName);
     }
 
