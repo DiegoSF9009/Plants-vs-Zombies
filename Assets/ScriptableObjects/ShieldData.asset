@@ -13,4 +13,13 @@ MonoBehaviour:
   m_Name: ShieldData
   m_EditorClassIdentifier: 
   maxHealth: 0
-  actionAssets: []
+  actionAssets:
+  - soundName: 
+    animationName: 
+    actionKey: 0
+  - soundName: 
+    animationName: 
+    actionKey: 0
+  - soundName: 
+    animationName: 
+    actionKey: 0

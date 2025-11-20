@@ -38,7 +38,7 @@ public class Flower : BasePlant
     }
     private void OnEnable()
     {
-        //SoundManager.instance.Play(flowerData.appearSound);
+        SoundManager.instance.Play(flowerData.GetSoundName(ActionKey.Appear));
         health.InitializeHealth(flowerData.maxHealth);
         animator.Play(flowerData.GetAnimationName(ActionKey.Idle), 0, 0f);
     }
