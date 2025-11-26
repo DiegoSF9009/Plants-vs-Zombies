@@ -4,8 +4,14 @@ public class LaneManager : MonoBehaviour
 {
 
     [SerializeField]
-
     private Lane[] lanes;
+    private Lane[] Lanes
+    
+    {
+    
+        get {return lanes;}
+    }
+    
 
     public Transform GetFrameInLane()
     {

@@ -10,6 +10,12 @@ public class InstantiatePoolObjects : MonoBehaviour
 
     private GameObject currentObject;
 
+    public void Initialize()
+    {
+        currentObject = null;
+        objectPool.Clear();
+    }
+
     public void InstantiateObject(Transform target)
     {
         currentObject = GetPoolObject();
