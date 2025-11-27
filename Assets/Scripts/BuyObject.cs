@@ -25,9 +25,19 @@ public class BuyObject : MonoBehaviour
     {
         if (coinsManager.CanBuy(cost))
         {
+            costText.text = cost.ToString();
+        }
+    }
+
+    public void TryBuyObject()
+    {
+        if (coinsManager.CanBuy(cost))
+        {
             objectPool.InstantiateObject(transform);
             GameObject boughtObject = objectPool.GetCurrentObject();
             onObjectBought?.Invoke(boughtObject.transform);
+
+
         }
     }
 

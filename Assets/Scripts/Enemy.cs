@@ -22,6 +22,8 @@ public class Enemy : MonoBehaviour
 
     private UnityEvent onDie = new UnityEvent();
 
+    public UnityEvent OnDie => onDie;
+
     private bool isAttacking = false;
 
     private Coroutine attackCoroutine;
