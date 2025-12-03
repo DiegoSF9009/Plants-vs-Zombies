@@ -150,7 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb98966e6a986b644b0b9c1e1f02ef6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 50
+  speed: 300
   damage: 20
   onHitEnemy:
     m_PersistentCalls:

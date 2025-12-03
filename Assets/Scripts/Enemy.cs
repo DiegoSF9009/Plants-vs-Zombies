@@ -30,22 +30,30 @@ public class Enemy : MonoBehaviour
 
     private Health targetHealth;
 
+    [SerializeField]
+    private Collider collider;
+    
+    private bool isActive = false;
+
     private void OnEnable()
     {
-        health.InitializeHealth(enemyData.health);
+
+        isActive = true;
+        collider.enabled = true;
+        health.InitializeHealth(enemyData.maxHealth);
         StartLooking();
-        //SoundManager.instance.Play("zombiemine");
+        //SoundManager.instance.Play("enemyData.GetSoundName(ActionKey.Appear));
     }
 
     private void StartLooking()
     {
         isAttacking = false;
-        animator.Play(enemyData.walkAnimation);
+        animator.Play(enemyData.GetAnimationName(ActionKey.Walk));
     }
 
     private void Update()
     {
-        if (!isAttacking)
+        if (isActive && !isAttacking && health.CurrentHealth > 0)
         {
             transform.Translate(Vector3.left * enemyData.speed * Time.deltaTime);
             Vector3 forward = transform.TransformDirection(Vector3. left);
@@ -62,22 +70,30 @@ public class Enemy : MonoBehaviour
 
     private IEnumerator Attack()
     {
-        while (targetHealth.CurrentHealth > 0)
+        while (isActive && targetHealth != null && targetHealth.CurrentHealth > 0)
         {
-            SoundManager.instance.Play("zombieattack");
-            animator.Play(enemyData.attackAnimation, 0, 0f);
+            SoundManager.instance.Play(enemyData.GetSoundName(ActionKey.Attack));
+            animator.Play(enemyData.GetAnimationName(ActionKey.Attack), 0, 0f);
             yield return new WaitForSeconds(enemyData.attackDuration);
-            SoundManager.instance.Play("Bonk");
+            SoundManager.instance.Play(enemyData.GetSoundName(ActionKey.Hit));
             onAttackTarget?.Invoke(targetHealth.transform);
             targetHealth.TakeDamage(enemyData.damage);
+            if (targetHealth.CurrentHealth <=0) 
+            
+            {
+                break;
+            }
             yield return new WaitForSeconds(enemyData.timeBetweenAttacks);
         }
+        targetHealth = null;
         attackCoroutine = null;
         StartLooking();
     }
     public void Die()
     {
-        SoundManager.instance.Play("zombiedie");
+        isActive = false;
+        collider.enabled = false;
+        SoundManager.instance.Play(enemyData.GetSoundName(ActionKey.Die));
         StartCoroutine(DieRoutine());
     }
 
@@ -87,10 +103,30 @@ public class Enemy : MonoBehaviour
         {
             StopCoroutine(attackCoroutine);
         }
-        animator.Play(enemyData.deathAnimation);
+        animator.Play(enemyData.GetAnimationName(ActionKey.Die));
         yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length);
         onDie?.Invoke();
         gameObject.SetActive(false);
+
     }
+
+    public void Win() 
+    {
+        isActive = false;
+        collider.enabled = false;
+        if (attackCoroutine != null) 
+        
+        {
+
+            StopCoroutine(attackCoroutine);
+
+        }
+        animator.Play(enemyData.GetAnimationName(ActionKey.Win));
+        SoundManager.instance.Play(enemyData.GetSoundName(ActionKey.Win));
+
+
+
+    }
+
 
 }
