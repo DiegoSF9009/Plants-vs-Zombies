@@ -8,5 +8,11 @@ public class GameData : ScriptableObject
     public int currentLevelIndex = 0;
 
     public List<LevelData> levels;
+
+
+    public void SetLevel(int levelIndex)
+    {
+        currentLevelIndex = levelIndex;
+    }
     
 }

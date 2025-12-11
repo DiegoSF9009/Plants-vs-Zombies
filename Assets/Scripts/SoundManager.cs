@@ -19,7 +19,8 @@ public class SoundManager : MonoBehaviour
         }else if(instance != this){
             Destroy(gameObject);
         }
-        DontDestroyOnLoad(gameObject);
+
+        
     }
 
     public void Play(string soundname, float volume, float pitch)
